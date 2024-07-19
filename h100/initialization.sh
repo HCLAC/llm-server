@@ -25,7 +25,7 @@ else
 fi
 dpkg -i /opt/cuda-keyring_1.1-1_all.deb
 apt update
-apt install -y cuda-drivers
+apt install -y cuda-drivers-555
 apt install dkms
 apt upgrade
 ##install MLNX_OFED
@@ -45,5 +45,5 @@ EOF
 systemctl start opensm
 
 ## Install NVIDIA NVLink service
-apt-get install -y  datacenter-gpu-manager cuda-drivers-fabricmanager
+apt-get install -y  datacenter-gpu-manager cuda-drivers-fabricmanager-555
 systemctl enable nvidia-fabricmanager
